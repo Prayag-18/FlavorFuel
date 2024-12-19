@@ -46,7 +46,7 @@ FlavorFuel is an engaging recipe exploration platform that helps users discover 
 
 ### **1. Clone the Repository**  
 ```bash
-git clone https://github.com/yourusername/flavorfuel.git
+git clone https://github.com/Prayag-18/flavorfuel.git
 cd flavorfuel
 ```
 
