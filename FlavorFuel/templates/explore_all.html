@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='test.css') }}"> -->
+</head>
+<body>
+    <h1>Explore Recipes</h1>
+    
+    <div>
+        <form method="POST" action="{{ url_for('test') }}">
+            <label for="category">Select Category:</label>
+            <select name="category" id="category">
+                <option value="Culinary Explorers">Culinary Explorers</option>
+                <option value="Health-Conscious Individuals">Health-Conscious Individuals</option>
+                <option value="Fitness Enthusiasts">Fitness Enthusiasts</option>
+                <option value="Dietitians and Nutritionists">Dietitians and Nutritionists</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <div>
+        <h2>Recipes:</h2>
+        <ul>
+            {% for recipe in recipes %}
+                <li>
+                    <h3>{{ recipe["Recipe_title"] }}</h3>
+                    <img src="{{ recipe["img_url"] }}" alt="{{ recipe["Recipe_title"] }}" style="width:200px; height:auto;">
+                    <p>Calories: {{ recipe["Calories"] }}</p>
+                    <a href="{{ recipe["url"] }}" target="_blank">View Full Recipe</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

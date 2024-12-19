@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('static/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .taskbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: #d3863d; /* Vibrant red background */
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        .taskbar a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        .taskbar a:hover {
+            color: #000; /* Black color on hover */
+        }
+        .taskbar .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), rgba(0, 0, 0, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px; /* Adjust for taskbar height */
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            padding: 10px;
+        }
+        .option {
+            text-align: center;
+            font-weight: bold;
+            color: #fff;
+            transition: all 0.3s ease;
+            height: 250px;
+            width: 100%;
+            border-radius: 10px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .option-1 {
+            background-image: url('static/Health_Conscious.jpg');
+        }
+        .option-2 {
+            background-image: url('static/Dietitians.jpg');
+        }
+        .option-3 {
+            background-image: url('static/fitness.jpg');
+        }
+        .option-4 {
+            background-image: url('static/culnray.jpg');
+        }
+        .option p {
+            font-size: 16px;
+            color: #fff;
+            margin: 10px 0 0;
+            background: rgb(0, 0, 0);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .option strong {
+            font-size: 16px;
+            background: rgb(0, 0, 0);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .option:hover {
+            transform: scale(1.05);
+            border-color: #ff6b6b;
+        }
+    </style>
+</head>
+<body>
+    <div class="taskbar">
+        <div class="logo">Explore</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#services">Services</a>
+        </nav>
+    </div>
+    <div class="overlay">
+        <div class="container">
+            <div class="option option-1">
+                <a href="healthconscious.html" style="text-decoration: none; color: inherit;">
+                    <strong>Health-Conscious Individuals</strong>
+                    <p>Seeking balanced, nutritious meal options to support a healthy lifestyle.</p>
+                </a>
+            </div>
+            
+            <div class="option option-2">
+                <strong>Dietitians and Nutritionists</strong>
+                <p>Utilizing tools for flavor-rich, dietary-compliant meal plans tailored to clients' needs.</p>
+            </div>
+            <div class="option option-3">
+                <strong>Fitness Enthusiasts</strong>
+                <p>Needing tailored meal recommendations aligned with specific fitness goals and performance.</p>
+            </div>
+            <div class="option option-4">
+                <strong>Culinary Explorers</strong>
+                <p>Interested in experimenting with flavors while maintaining nutritional balance in meals.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Homepage</title>
+</head>
+<body>
+    <h1>Welcome to the Homepage</h1>
+
+    <!-- Form to submit data -->
+    <form method="POST">
+        <label for="data">Enter some data:</label>
+        <input type="text" id="data" name="data" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if data %}
+        <h2>Data received: {{ data }}</h2>
+    {% endif %}
+</body>
+</html>
