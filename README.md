@@ -1,7 +1,3 @@
-Here’s a **README** for **FlavorFuel**, structured and polished based on your code and its functionality.
-
----
-
 # **FlavorFuel: Recipe Exploration Platform**  
 
 ## **Overview**  
