@@ -118,14 +118,12 @@ FlavorFuel/
 ---
 
 ## **Contributors**  
-- **Your Name**  
-- **Team Members (Optional)**  
+- **Prayag Parashar**  
+- **Tarandeep Singh**
+- **Pradumme Attri**
+- **Aayu Singh**  
 
 ---
 
 ## **License**  
 This project is licensed under the MIT License.  
-
----
-
-Let me know if you need additional edits or refinements! 😊
