@@ -9,7 +9,7 @@ FlavorFuel is an engaging recipe exploration platform that helps users discover 
 
 1. **Recipe Discovery**  
    - Fetch recipes based on user preferences such as **ingredients**, **categories**, and **regions**.  
-   - Integrated with external APIs for dynamic recipe recommendations.  
+   - Integrated with external APIs([FlavourDB](https://documenter.getpostman.com/view/13496956/TVev55ME) and [RecipeDB](https://documenter.getpostman.com/view/16532608/2sAY4uD4Gb)) for dynamic recipe recommendations.  
 
 2. **User Categories**  
    - Tailored recipes for:  
